@@ -11,6 +11,7 @@
 #import "B.h"
 #import "C.h"
 
+static const NSString *st;
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -53,6 +54,9 @@ int main(int argc, const char * argv[]) {
         objA->a = 7;
         NSInteger n = objA->a;
         printf("%ld\n", n);
+        
+//        printf("reference count of st: %ld", [st retainCount]);
+        
         
     }
     return 0;
