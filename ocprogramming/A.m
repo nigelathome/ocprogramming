@@ -19,4 +19,13 @@
     printf("method2 of Class A\n");
 }
 
+- (void)dealloc
+{
+    if (NULL != buffer){
+        free(buffer);
+    }
+    [str release];
+    [super dealloc];
+}
+
 @end

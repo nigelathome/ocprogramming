@@ -11,7 +11,7 @@
 #import "B.h"
 #import "C.h"
 
-static const NSString *st;
+//static const NSString *st;
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
