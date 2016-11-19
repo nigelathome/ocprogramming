@@ -12,12 +12,13 @@
 #import "C.h"
 
 //static const NSString *st;
-typedef char * (*Fp)(char *p1, char *p2);
+typedef char * (*Fp)(char *p1, char *p2); // define alias of an function pointer
 
 // define an function to return the unique string
 char *returnString(char *s1, char *s2) {
     int i = 0;
     char *finalString = NULL;
+    printf("the size of f1 is: %ld\n", sizeof(finalString));
     i = strcmp(s1, s2);
     finalString = (i != 0)? s1 : s2;
     return finalString;
@@ -72,9 +73,16 @@ int main(int argc, const char * argv[]) {
         
         
     }
-    Fp f1 = returnString; // function pointer f1 to point to an function which defined before main function
+    Fp f1;
+    printf("the address of f1 is: %p\n", f1);
+    printf("the size of f1 is: %ld\n", sizeof(f1));
+    f1 = returnString; // function pointer f1 to point to an function which defined before main function
     char *result = f1("hello", "friends"); // to call function returnString by using Fp
     printf("this result is: %s\n", result);
+    printf("the address of returnString is: %p\n", returnString);
+    printf("the address of f1 is: %p\n", f1);
+    f1 = NULL;
+    printf("the address of f1 is: %p\n", f1);
     
     return 0;
 }
