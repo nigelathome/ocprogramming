@@ -12,6 +12,17 @@
 #import "C.h"
 
 //static const NSString *st;
+typedef char * (*Fp)(char *p1, char *p2);
+
+// define an function to return the unique string
+char *returnString(char *s1, char *s2) {
+    int i = 0;
+    char *finalString = NULL;
+    i = strcmp(s1, s2);
+    finalString = (i != 0)? s1 : s2;
+    return finalString;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -55,9 +66,15 @@ int main(int argc, const char * argv[]) {
         NSInteger n = objA->a;
         printf("%ld\n", n);
         
+        
+        
 //        printf("reference count of st: %ld", [st retainCount]);
         
         
     }
+    Fp f1 = returnString; // function pointer f1 to point to an function which defined before main function
+    char *result = f1("hello", "friends"); // to call function returnString by using Fp
+    printf("this result is: %s\n", result);
+    
     return 0;
 }
