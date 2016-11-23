@@ -10,6 +10,7 @@
 #import "A.h"
 #import "B.h"
 #import "C.h"
+#import "DriverInfo.h"
 
 //static const NSString *st;
 typedef char * (*Fp)(char *p1, char *p2); // define alias of an function pointer
@@ -83,6 +84,10 @@ int main(int argc, const char * argv[]) {
     printf("the address of f1 is: %p\n", f1);
     f1 = NULL;
     printf("the address of f1 is: %p\n", f1);
+    
+    // for test @property syntax
+    DriverInfo *info = [[DriverInfo alloc]init];
+    [info initializing];
     
     return 0;
 }
