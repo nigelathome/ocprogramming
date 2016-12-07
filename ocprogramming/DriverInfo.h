@@ -11,7 +11,7 @@
 @interface DriverInfo : NSObject
 {
 @protected
-    id obj;
+    id __strong obj;
     
 @private
     NSString *str;
