@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		915C524A1DFA5EF0007F6605 /* MyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 915C52491DFA5EF0007F6605 /* MyObject.m */; };
 		91CD05451DE588A500FB28EC /* DriverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD05441DE588A500FB28EC /* DriverInfo.m */; };
 		91DA29D71DBB2C3800EBD49A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DA29D61DBB2C3800EBD49A /* main.m */; };
 		91DA29E31DBB2CFB00EBD49A /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DA29E21DBB2CFB00EBD49A /* A.m */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		915C52481DFA5EF0007F6605 /* MyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyObject.h; sourceTree = "<group>"; };
+		915C52491DFA5EF0007F6605 /* MyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyObject.m; sourceTree = "<group>"; };
 		91CD05431DE588A500FB28EC /* DriverInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverInfo.h; sourceTree = "<group>"; };
 		91CD05441DE588A500FB28EC /* DriverInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverInfo.m; sourceTree = "<group>"; };
 		91DA29D31DBB2C3800EBD49A /* ocprogramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ocprogramming; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +81,8 @@
 				91DA29E81DBB2DDF00EBD49A /* C.m */,
 				91CD05431DE588A500FB28EC /* DriverInfo.h */,
 				91CD05441DE588A500FB28EC /* DriverInfo.m */,
+				915C52481DFA5EF0007F6605 /* MyObject.h */,
+				915C52491DFA5EF0007F6605 /* MyObject.m */,
 			);
 			path = ocprogramming;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			files = (
 				91DA29E61DBB2D6000EBD49A /* B.m in Sources */,
 				91DA29E31DBB2CFB00EBD49A /* A.m in Sources */,
+				915C524A1DFA5EF0007F6605 /* MyObject.m in Sources */,
 				91DA29E91DBB2DDF00EBD49A /* C.m in Sources */,
 				91CD05451DE588A500FB28EC /* DriverInfo.m in Sources */,
 				91DA29D71DBB2C3800EBD49A /* main.m in Sources */,
