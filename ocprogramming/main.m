@@ -29,6 +29,9 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
 //        NSLog(@"Hello, World!");
+        /**
+         *ARC n MRC testing
+         **/
         id b = [[B alloc] init];
         id c = [[C alloc] init];
         
@@ -68,12 +71,14 @@ int main(int argc, const char * argv[]) {
         NSInteger n = objA->a;
         printf("%ld\n", n);
         
-        
-        
 //        printf("reference count of st: %ld", [st retainCount]);
-        
+   ////////////////////////////////////////////////////////////////
         
     }
+    
+    /**
+     * function pointer testing
+     **/
     Fp f1;
     printf("the address of f1 is: %p\n", f1);
     printf("the size of f1 is: %ld\n", sizeof(f1));
@@ -88,6 +93,9 @@ int main(int argc, const char * argv[]) {
     // for test @property syntax
     DriverInfo *info = [[DriverInfo alloc]init];
     [info initializing];
+    ////////////////////////////////////////////////////////////////
+
+    
     
     return 0;
 }
